@@ -21,18 +21,7 @@ import {
   ArrowRight
 } from 'lucide-react';
 
-type SectionType = 'condominii' | 'pmi' | 'pa' | 'privati';
-
-interface SectionData {
-  id: SectionType;
-  title: string;
-  icon: React.ReactNode;
-  description: string;
-  features: string[];
-  image: string;
-}
-
-const sections: SectionData[] = [
+const sections = [
   {
     id: 'condominii',
     title: 'Condominii',
@@ -88,10 +77,10 @@ const sections: SectionData[] = [
 ];
 
 export default function App() {
-  const [activeSection, setActiveSection] = useState<SectionType>('condominii');
+  const [activeSection, setActiveSection] = useState('condominii');
   const [isMenuOpen, setIsMenuOpen] = useState(false);
 
-  const currentData = sections.find(s => s.id === activeSection)!;
+  const currentData = sections.find(s => s.id === activeSection);
 
   return (
     <div className="min-h-screen bg-[#fcfcfc] text-slate-900 font-sans">
