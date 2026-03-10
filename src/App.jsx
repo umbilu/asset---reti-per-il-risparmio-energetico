@@ -93,9 +93,9 @@ export default function App() {
             </div>
 
             <div className="hidden md:flex items-center gap-8">
-              <a href="#servizi" className="text-sm font-medium text-slate-600 hover:text-[#009EE3] transition-colors">Servizi</a>
-              <a href="#chi-siamo" className="text-sm font-medium text-slate-600 hover:text-[#009EE3] transition-colors">Chi Siamo</a>
-              <a href="#contatti" className="px-5 py-2.5 bg-slate-900 text-white rounded-full text-sm font-medium hover:bg-[#009EE3] transition-all shadow-sm">Contattaci</a>
+              <a href="#servizi" className="text-sm font-medium text-slate-600 hover:text-[#afc816] transition-colors">Servizi</a>
+              <a href="#chi-siamo" className="text-sm font-medium text-slate-600 hover:text-[#afc816] transition-colors">Chi Siamo</a>
+              <a href="#contatti" className="px-5 py-2.5 bg-slate-900 text-white rounded-full text-sm font-medium hover:bg-[#afc816] transition-all shadow-sm">Contattaci</a>
             </div>
 
             <button className="md:hidden" onClick={() => setIsMenuOpen(!isMenuOpen)}>
@@ -113,11 +113,11 @@ export default function App() {
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.6 }}
           >
-            <span className="inline-block px-4 py-1.5 mb-6 text-xs font-bold tracking-widest uppercase text-[#009EE3] bg-blue-50 rounded-full">
+            <span className="inline-block px-4 py-1.5 mb-6 text-xs font-bold tracking-widest uppercase text-[#afc816] bg-blue-50 rounded-full">
               Asset Sostenibile
             </span>
             <h1 className="text-4xl md:text-6xl font-bold tracking-tight text-slate-900 mb-6 max-w-4xl mx-auto leading-[1.1]">
-              Noi forniamo soluzioni per la gestione del vostro <span className="text-[#009EE3]">patrimonio immobiliare</span>
+              Noi forniamo soluzioni per la gestione del vostro <span className="text-[#afc816]">patrimonio immobiliare</span>
             </h1>
             <p className="text-lg md:text-xl text-slate-600 max-w-2xl mx-auto mb-10 leading-relaxed">
               Presentiamo un'offerta integrata di prodotti e servizi per la gestione efficiente degli immobili, garantendo risparmio, comfort e rispetto per l'ambiente.
@@ -137,8 +137,8 @@ export default function App() {
                 key={section.id}
                 onClick={() => setActiveSection(section.id)}
                 className={`flex items-center gap-3 px-6 py-4 rounded-2xl transition-all duration-300 border ${activeSection === section.id
-                  ? 'bg-[#009EE3] text-white border-[#009EE3] shadow-lg shadow-blue-200 scale-105'
-                  : 'bg-white text-slate-600 border-slate-100 hover:border-[#009EE3] hover:bg-blue-50/50'
+                  ? 'bg-[#afc816] text-white border-[#afc816] shadow-lg shadow-blue-200 scale-105'
+                  : 'bg-white text-slate-600 border-slate-100 hover:border-[#afc816] hover:bg-blue-50/50'
                   }`}
               >
                 {section.icon}
@@ -179,7 +179,7 @@ export default function App() {
                 </div>
 
                 <div className="pt-4">
-                  <button className="group flex items-center gap-2 px-8 py-4 bg-slate-900 text-white rounded-full font-semibold hover:bg-[#009EE3] transition-all">
+                  <button className="group flex items-center gap-2 px-8 py-4 bg-slate-900 text-white rounded-full font-semibold hover:bg-[#afc816] transition-all">
                     Scopri l'offerta completa
                     <ArrowRight className="w-5 h-5 group-hover:translate-x-1 transition-transform" />
                   </button>
@@ -257,11 +257,11 @@ export default function App() {
               <h4 className="font-bold mb-6">Contatti</h4>
               <ul className="space-y-4 text-slate-400 text-sm">
                 <li className="flex items-center gap-3">
-                  <Phone className="w-4 h-4 text-[#009EE3]" />
+                  <Phone className="w-4 h-4 text-[#afc816]" />
                   +39 0123 456789
                 </li>
                 <li className="flex items-center gap-3">
-                  <Mail className="w-4 h-4 text-[#009EE3]" />
+                  <Mail className="w-4 h-4 text-[#afc816]" />
                   info@asset.it
                 </li>
               </ul>
@@ -283,9 +283,9 @@ export default function App() {
                 <input
                   type="email"
                   placeholder="La tua email"
-                  className="bg-slate-800 border-none rounded-lg px-4 py-2 text-sm w-full focus:ring-2 focus:ring-[#009EE3]"
+                  className="bg-slate-800 border-none rounded-lg px-4 py-2 text-sm w-full focus:ring-2 focus:ring-[#afc816]"
                 />
-                <button className="bg-[#009EE3] px-4 py-2 rounded-lg hover:bg-blue-500 transition-colors">
+                <button className="bg-[#afc816] px-4 py-2 rounded-lg hover:bg-blue-500 transition-colors">
                   <ChevronRight className="w-5 h-5" />
                 </button>
               </div>
