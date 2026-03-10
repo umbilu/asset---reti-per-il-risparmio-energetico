@@ -18,7 +18,8 @@ import {
   X,
   Phone,
   Mail,
-  ArrowRight
+  ArrowRight,
+  MapPin
 } from 'lucide-react';
 
 const sections = [
@@ -307,13 +308,20 @@ export default function App() {
             <div>
               <h4 className="font-bold mb-6">Contatti</h4>
               <ul className="space-y-4 text-slate-400 text-sm">
-                <li className="flex items-center gap-3">
-                  <Phone className="w-4 h-4 text-[#afc816]" />
-                  +39 0123 456789
+                <li className="flex items-start gap-3">
+                  <MapPin className="w-4 h-4 text-[#afc816] mt-1 shrink-0" />
+                  <span>Via Paolo Fabbri 1/3<br />40138 – Bologna (IT)</span>
                 </li>
-                <li className="flex items-center gap-3">
-                  <Mail className="w-4 h-4 text-[#afc816]" />
-                  info@asset.it
+                <li className="flex items-start gap-3">
+                  <Phone className="w-4 h-4 text-[#afc816] mt-1 shrink-0" />
+                  <span>339 582 2066<br />328 626 0407</span>
+                </li>
+                <li className="flex items-start gap-3">
+                  <Mail className="w-4 h-4 text-[#afc816] mt-1 shrink-0" />
+                  <div className="flex flex-col gap-1">
+                    <a href="mailto:segreteria@reteasset.it" className="hover:text-white transition-colors">segreteria@reteasset.it</a>
+                    <a href="mailto:assetpec@pec.it" className="hover:text-white transition-colors text-[10px] opacity-70">PEC: assetpec@pec.it</a>
+                  </div>
                 </li>
               </ul>
             </div>
@@ -344,7 +352,7 @@ export default function App() {
           </div>
 
           <div className="pt-8 border-t border-slate-800 text-center text-slate-500 text-xs">
-            © 2024 Asset - Reti per il Risparmio Energetico. Tutti i diritti riservati.
+            © 2024 Asset - Reti per il Risparmio Energetico. P.IVA 03613121205. Tutti i diritti riservati.
           </div>
         </div>
       </footer>
