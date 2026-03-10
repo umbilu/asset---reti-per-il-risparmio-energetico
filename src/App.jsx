@@ -19,7 +19,10 @@ import {
   Phone,
   Mail,
   ArrowRight,
-  MapPin
+  MapPin,
+  TrendingDown,
+  CircleDollarSign,
+  Flame
 } from 'lucide-react';
 
 const sections = [
@@ -95,6 +98,7 @@ export default function App() {
 
             <div className="hidden md:flex items-center gap-8">
               <a href="#servizi" className="text-sm font-medium text-slate-600 hover:text-[#afc816] transition-colors">Servizi</a>
+              <a href="#vantaggi" className="text-sm font-medium text-slate-600 hover:text-[#afc816] transition-colors">Vantaggi Fiscali</a>
               <a href="#chi-siamo" className="text-sm font-medium text-slate-600 hover:text-[#afc816] transition-colors">Chi Siamo</a>
               <a href="#contatti" className="px-5 py-2.5 bg-slate-900 text-white rounded-full text-sm font-medium hover:bg-[#afc816] transition-all shadow-sm">Contattaci</a>
             </div>
@@ -126,6 +130,7 @@ export default function App() {
           </motion.div>
         </div>
       </header>
+
 
       {/* Interactive Selection Section */}
       <section id="servizi" className="py-12 bg-white">
@@ -217,6 +222,59 @@ export default function App() {
         </div>
       </section>
 
+      {/* Vantaggi Fiscali Section */}
+      <section id="vantaggi" className="py-24 bg-slate-50">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="text-center mb-16">
+            <h2 className="text-3xl md:text-4xl font-bold text-slate-900 mb-4">Vantaggi Fiscali e Incentivi</h2>
+            <p className="text-slate-600 max-w-2xl mx-auto">
+              Sfrutta le agevolazioni fiscali previste dallo Stato Italiano per la riqualificazione energetica del tuo immobile.
+              Ti affianchiamo nella gestione di tutte le pratiche burocratiche.
+            </p>
+          </div>
+
+          <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
+            {[
+              {
+                title: 'Ecobonus',
+                desc: 'Detrazioni fiscali fino al 65% per interventi di riqualificazione energetica globale.',
+                icon: <Zap className="w-8 h-8 text-[#afc816]" />
+              },
+              {
+                title: 'Sismabonus',
+                desc: 'Incentivi per la messa in sicurezza statica degli edifici in zone a rischio sismico.',
+                icon: <ShieldCheck className="w-8 h-8 text-[#afc816]" />
+              },
+              {
+                title: 'Superbonus',
+                desc: 'Agevolazioni potenziate per interventi trainanti di efficientamento energetico.',
+                icon: <TrendingDown className="w-8 h-8 text-[#afc816]" />
+              },
+              {
+                title: 'Conto Termico',
+                desc: 'Incentivo diretto per la produzione di energia termica da fonti rinnovabili.',
+                icon: <Flame className="w-8 h-8 text-[#afc816]" />
+              }
+            ].map((item, i) => (
+              <div key={i} className="bg-white p-8 rounded-3xl border border-slate-100 shadow-sm hover:shadow-lg transition-all duration-300">
+                <div className="mb-6 bg-blue-50 w-16 h-16 rounded-2xl flex items-center justify-center">
+                  {item.icon}
+                </div>
+                <h3 className="text-xl font-bold mb-3">{item.title}</h3>
+                <p className="text-slate-600 text-sm leading-relaxed">{item.desc}</p>
+              </div>
+            ))}
+          </div>
+
+          <div className="mt-16 flex justify-center">
+            <button className="group flex items-center gap-2 px-8 py-4 bg-slate-900 text-white rounded-full font-semibold hover:bg-[#afc816] transition-all">
+              Scopri l'offerta completa
+              <ArrowRight className="w-5 h-5 group-hover:translate-x-1 transition-transform" />
+            </button>
+          </div>
+        </div>
+      </section>
+
       {/* Detailed Info Section */}
       <section id="chi-siamo" className="py-24 bg-white">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
@@ -248,6 +306,36 @@ export default function App() {
                 </p>
               </div>
             </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Partners Section/Logo Cloud */}
+      <section className="py-12 bg-white overflow-hidden border-y border-slate-50">
+        <div className="max-w-7xl mx-auto px-4 mb-8">
+          <p className="text-center text-sm font-semibold text-slate-400 uppercase tracking-widest">I nostri partner e collaboratori</p>
+        </div>
+        <div className="relative">
+          <div className="flex space-x-12 animate-scroll whitespace-nowrap">
+            {[1, 2, 3, 4, 5, 6].map((i) => (
+              <div key={i} className="flex-shrink-0 flex items-center justify-center grayscale opacity-50 hover:grayscale-0 hover:opacity-100 transition-all duration-300 min-w-[150px]">
+                <img
+                  src={`https://placehold.jp/24/ffffff/000000/150x50.png?text=LOGO${i}`}
+                  alt={`Partner ${i}`}
+                  className="h-12 w-auto object-contain px-4"
+                />
+              </div>
+            ))}
+            {/* Duplicate for infinite loop */}
+            {[1, 2, 3, 4, 5, 6].map((i) => (
+              <div key={`dup-${i}`} className="flex-shrink-0 flex items-center justify-center grayscale opacity-50 hover:grayscale-0 hover:opacity-100 transition-all duration-300 min-w-[150px]">
+                <img
+                  src={`https://placehold.jp/24/ffffff/000000/150x50.png?text=LOGO${i}`}
+                  alt={`Partner ${i}`}
+                  className="h-12 w-auto object-contain px-4"
+                />
+              </div>
+            ))}
           </div>
         </div>
       </section>
