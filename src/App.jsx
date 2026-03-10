@@ -220,7 +220,7 @@ export default function App() {
       {/* Detailed Info Section */}
       <section id="chi-siamo" className="py-24 bg-white">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="bg-slate-50 rounded-[3rem] p-8 md:p-16 border border-slate-100 shadow-sm">
+          <div className="max-w-4xl mx-auto space-y-12">
             <div className="max-w-4xl mx-auto space-y-12">
               <div className="space-y-6">
                 <h2 className="text-3xl md:text-4xl font-bold text-slate-900 leading-tight">
@@ -246,20 +246,6 @@ export default function App() {
                   </p>
                   <p className="font-medium text-slate-900">
                     Qualsiasi sia la vostra necessità, noi siamo in grado di offrire più soluzioni.
-                  </p>
-                </div>
-              </div>
-
-              <div className="p-8 bg-white rounded-3xl border border-slate-100 shadow-sm space-y-6">
-                <p className="text-lg">
-                  Se siete un amministratore di condominio, un imprenditore o una Pubblica Autorità, fissate un appuntamento con noi e risolveremo ogni vostra complicazione con un <strong>pacchetto chiavi in mano</strong>, od intermediato da persone di vostra fiducia, al minor costo possibile (e spesso a costo <strong>ZERO</strong>).
-                </p>
-                <div className="pt-4 flex flex-wrap gap-4">
-                  <a href="#contatti" className="px-8 py-4 bg-[#afc816] text-white rounded-full font-bold hover:shadow-lg hover:shadow-green-100 transition-all">
-                    Contattaci ora
-                  </a>
-                  <p className="flex items-center text-sm text-slate-500">
-                    O compila il form a fondo pagina per ulteriori informazioni.
                   </p>
                 </div>
               </div>
