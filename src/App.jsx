@@ -117,7 +117,7 @@ export default function App() {
               Asset Sostenibile
             </span>
             <h1 className="text-4xl md:text-6xl font-bold tracking-tight text-slate-900 mb-6 max-w-4xl mx-auto leading-[1.1]">
-              Riqualificazione Energetica ed Edilizia Sostenibile <span className="text-[#009EE3]">Chiavi in Mano</span>
+              Noi forniamo soluzioni per la gestione del vostro <span className="text-[#009EE3]">patrimonio immobiliare</span>
             </h1>
             <p className="text-lg md:text-xl text-slate-600 max-w-2xl mx-auto mb-10 leading-relaxed">
               Presentiamo un'offerta integrata di prodotti e servizi per la gestione efficiente degli immobili, garantendo risparmio, comfort e rispetto per l'ambiente.
