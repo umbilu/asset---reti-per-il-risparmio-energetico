@@ -223,7 +223,7 @@ export default function App() {
           <div className="max-w-4xl mx-auto space-y-12">
             <div className="space-y-6">
               <h2 className="text-3xl md:text-4xl font-bold text-slate-900 leading-tight">
-                Asset Servizi Srl / Rete Asset propone soluzioni per l'efficientamento energetico e per l'edilizia sostenibile
+                Asset Servizi Srl propone soluzioni per l'efficientamento energetico e per l'edilizia sostenibile
               </h2>
               <p className="text-xl text-[#afc816] font-semibold">
                 A consumo di energia Nearly Point Zero e molto altro.
