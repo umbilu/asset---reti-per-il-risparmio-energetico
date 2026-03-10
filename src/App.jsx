@@ -221,33 +221,31 @@ export default function App() {
       <section id="chi-siamo" className="py-24 bg-white">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="max-w-4xl mx-auto space-y-12">
-            <div className="max-w-4xl mx-auto space-y-12">
-              <div className="space-y-6">
-                <h2 className="text-3xl md:text-4xl font-bold text-slate-900 leading-tight">
-                  Asset Servizi Srl / Rete Asset propone soluzioni per l'efficientamento energetico e per l'edilizia sostenibile
-                </h2>
-                <p className="text-xl text-[#afc816] font-semibold">
-                  A consumo di energia Nearly Point Zero e molto altro.
+            <div className="space-y-6">
+              <h2 className="text-3xl md:text-4xl font-bold text-slate-900 leading-tight">
+                Asset Servizi Srl / Rete Asset propone soluzioni per l'efficientamento energetico e per l'edilizia sostenibile
+              </h2>
+              <p className="text-xl text-[#afc816] font-semibold">
+                A consumo di energia Nearly Point Zero e molto altro.
+              </p>
+            </div>
+
+            <div className="grid md:grid-cols-2 gap-8 text-slate-600 leading-relaxed">
+              <div className="space-y-4">
+                <p>
+                  Metodologie costruttive e materiali innovativi, comunità energetiche, GAC, CER-CACER, per condomini, PMI e PA, tramite ESCo, PPP e formule finanziate.
+                </p>
+                <p>
+                  Offriamo il cambio di centrali termiche con formula <strong>Energy+ (costo zero)</strong>, finanza agevolata, RAS, e gestione della Compliance Privacy (fatta da DPO).
                 </p>
               </div>
-
-              <div className="grid md:grid-cols-2 gap-8 text-slate-600 leading-relaxed">
-                <div className="space-y-4">
-                  <p>
-                    Metodologie costruttive e materiali innovativi, comunità energetiche, GAC, CER-CACER, per condomini, PMI e PA, tramite ESCo, PPP e formule finanziate.
-                  </p>
-                  <p>
-                    Offriamo il cambio di centrali termiche con formula <strong>Energy+ (costo zero)</strong>, finanza agevolata, RAS, e gestione della Compliance Privacy (fatta da DPO).
-                  </p>
-                </div>
-                <div className="space-y-4">
-                  <p>
-                    Controllo acque, certificazioni, assicurazioni e trattamento dell'umidità di risalita di edifici fino a 3000mq sono solo alcune delle nostre proposte...
-                  </p>
-                  <p className="font-medium text-slate-900">
-                    Qualsiasi sia la vostra necessità, noi siamo in grado di offrire più soluzioni.
-                  </p>
-                </div>
+              <div className="space-y-4">
+                <p>
+                  Controllo acque, certificazioni, assicurazioni e trattamento dell'umidità di risalita di edifici fino a 3000mq sono solo alcune delle nostre proposte...
+                </p>
+                <p className="font-medium text-slate-900">
+                  Qualsiasi sia la vostra necessità, noi siamo in grado di offrire più soluzioni.
+                </p>
               </div>
             </div>
           </div>
