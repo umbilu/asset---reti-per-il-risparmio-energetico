@@ -5,14 +5,14 @@
 
 import React, { useState } from 'react';
 import { motion, AnimatePresence } from 'motion/react';
-import { 
-  Building2, 
-  Factory, 
-  Landmark, 
-  User, 
-  Leaf, 
-  Zap, 
-  ShieldCheck, 
+import {
+  Building2,
+  Factory,
+  Landmark,
+  User,
+  Leaf,
+  Zap,
+  ShieldCheck,
   ChevronRight,
   Menu,
   X,
@@ -89,12 +89,9 @@ export default function App() {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="flex justify-between h-20 items-center">
             <div className="flex items-center gap-3">
-              <div className="flex flex-col">
-                <span className="text-2xl font-black tracking-tighter text-slate-900 leading-none">Asset</span>
-                <span className="text-[8px] font-bold uppercase tracking-widest text-slate-500 leading-none mt-1">Reti per il risparmio energetico</span>
-              </div>
+              <img src="/images/logo_asset.png" alt="Asset Logo" className="h-12 w-auto" />
             </div>
-            
+
             <div className="hidden md:flex items-center gap-8">
               <a href="#servizi" className="text-sm font-medium text-slate-600 hover:text-[#009EE3] transition-colors">Servizi</a>
               <a href="#chi-siamo" className="text-sm font-medium text-slate-600 hover:text-[#009EE3] transition-colors">Chi Siamo</a>
@@ -132,18 +129,17 @@ export default function App() {
       {/* Interactive Selection Section */}
       <section id="servizi" className="py-12 bg-white">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          
+
           {/* Category Navigation */}
           <div className="flex flex-wrap justify-center gap-4 mb-16">
             {sections.map((section) => (
               <button
                 key={section.id}
                 onClick={() => setActiveSection(section.id)}
-                className={`flex items-center gap-3 px-6 py-4 rounded-2xl transition-all duration-300 border ${
-                  activeSection === section.id
-                    ? 'bg-[#009EE3] text-white border-[#009EE3] shadow-lg shadow-blue-200 scale-105'
-                    : 'bg-white text-slate-600 border-slate-100 hover:border-[#009EE3] hover:bg-blue-50/50'
-                }`}
+                className={`flex items-center gap-3 px-6 py-4 rounded-2xl transition-all duration-300 border ${activeSection === section.id
+                  ? 'bg-[#009EE3] text-white border-[#009EE3] shadow-lg shadow-blue-200 scale-105'
+                  : 'bg-white text-slate-600 border-slate-100 hover:border-[#009EE3] hover:bg-blue-50/50'
+                  }`}
               >
                 {section.icon}
                 <span className="font-semibold">{section.title}</span>
@@ -200,8 +196,8 @@ export default function App() {
                 transition={{ duration: 0.5 }}
                 className="relative aspect-[4/3] rounded-3xl overflow-hidden shadow-2xl"
               >
-                <img 
-                  src={currentData.image} 
+                <img
+                  src={currentData.image}
                   alt={currentData.title}
                   className="w-full h-full object-cover"
                   referrerPolicy="no-referrer"
@@ -227,7 +223,7 @@ export default function App() {
             <h2 className="text-3xl font-bold mb-4">Perché scegliere Asset?</h2>
             <p className="text-slate-600">Il nostro approccio integrato per risultati concreti e duraturi.</p>
           </div>
-          
+
           <div className="grid md:grid-cols-3 gap-8">
             {[
               { title: 'Chiavi in Mano', desc: 'Dalla progettazione alla realizzazione, pensiamo a tutto noi.', icon: <ShieldCheck className="w-8 h-8 text-[#76BC21]" /> },
@@ -250,16 +246,13 @@ export default function App() {
           <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-12 mb-16">
             <div className="space-y-6">
               <div className="flex items-center gap-3">
-                <div className="flex flex-col">
-                  <span className="text-2xl font-black tracking-tighter text-white leading-none">Asset</span>
-                  <span className="text-[8px] font-bold uppercase tracking-widest text-slate-400 leading-none mt-1">Reti per il risparmio energetico</span>
-                </div>
+                <img src="/images/logo_asset.png" alt="Asset Logo" className="h-12 w-auto brightness-0 invert" />
               </div>
               <p className="text-slate-400 text-sm leading-relaxed">
                 Leader nella riqualificazione energetica e nell'edilizia sostenibile. Trasformiamo gli edifici per un futuro migliore.
               </p>
             </div>
-            
+
             <div>
               <h4 className="font-bold mb-6">Contatti</h4>
               <ul className="space-y-4 text-slate-400 text-sm">
@@ -287,9 +280,9 @@ export default function App() {
               <h4 className="font-bold mb-6">Newsletter</h4>
               <p className="text-slate-400 text-sm mb-4">Rimani aggiornato sulle ultime novità e incentivi.</p>
               <div className="flex gap-2">
-                <input 
-                  type="email" 
-                  placeholder="La tua email" 
+                <input
+                  type="email"
+                  placeholder="La tua email"
                   className="bg-slate-800 border-none rounded-lg px-4 py-2 text-sm w-full focus:ring-2 focus:ring-[#009EE3]"
                 />
                 <button className="bg-[#009EE3] px-4 py-2 rounded-lg hover:bg-blue-500 transition-colors">
@@ -298,7 +291,7 @@ export default function App() {
               </div>
             </div>
           </div>
-          
+
           <div className="pt-8 border-t border-slate-800 text-center text-slate-500 text-xs">
             © 2024 Asset - Reti per il Risparmio Energetico. Tutti i diritti riservati.
           </div>
