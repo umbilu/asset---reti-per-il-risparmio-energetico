@@ -76,7 +76,7 @@ const sections = [
       'Sistemi di accumulo energia',
       'Domotica per il risparmio'
     ],
-    image: 'https://images.unsplash.com/photo-1513584684374-8bdb7489feef?auto=format&fit=crop&q=80&w=1000'
+    image: 'https://images.unsplash.com/photo-1600596542815-ffad4c1539a9?auto=format&fit=crop&q=80&w=1000'
   }
 ];
 
